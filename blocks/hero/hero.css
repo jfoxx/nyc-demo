@@ -1,3 +1,7 @@
+.hero-container {
+  flex-basis: 100%;
+}
+
 .hero-container .hero-wrapper {
   max-width: unset;
   padding: 0;
@@ -10,10 +14,12 @@
 }
 
 .hero h1 {
-  max-width: 1200px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   color: var(--background-color);
+  text-align: right;
+  font-size: 7rem;
 }
 
 .hero picture {

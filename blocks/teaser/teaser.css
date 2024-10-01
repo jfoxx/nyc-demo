@@ -1,0 +1,29 @@
+.teaser {
+    > div {
+        display: flex;
+        border: 1px solid var(--yellow);
+        margin: 20px 0;
+        cursor: pointer;
+
+        >div:first-of-type {
+            width: 40%;
+            img {
+                aspect-ratio: 4/3;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+
+        >div:last-of-type {
+            width: 55%;
+            margin-left: 5%;
+
+            strong {
+                font-size: var(--heading-font-size-m);
+                color: var(--dark-blue);
+            }
+        }
+    }
+
+    
+}

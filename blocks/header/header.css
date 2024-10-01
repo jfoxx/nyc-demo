@@ -1,9 +1,10 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--dark-blue);
   width: 100%;
   z-index: 2;
   position: fixed;
+  color: white;
 }
 
 header nav {
@@ -15,7 +16,7 @@ header nav {
   align-items: center;
   gap: 0 24px;
   margin: auto;
-  max-width: 1248px;
+  max-width: 1600px;
   height: var(--nav-height);
   padding: 0 24px;
   font-family: var(--body-font-family);
@@ -35,7 +36,7 @@ header nav[aria-expanded='true'] {
     display: flex;
     justify-content: space-between;
     gap: 0 32px;
-    max-width: 1264px;
+    max-width: 1600pxpx;
     padding: 0 32px;
   }
 
@@ -142,6 +143,23 @@ header .nav-brand {
   font-size: var(--heading-font-size-s);
   font-weight: 700;
   line-height: 1;
+  display: flex;
+  text-align: right;
+  border-right: 1px solid white;
+  padding-right: 20px;
+
+
+  &::after {
+    content: '';
+    width: 150px;
+    height: 50px;
+    margin-left: 15px;
+    background-color: white;
+    display: block;
+    mask-image: url(/icons/NYC_Logo.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+  }
 }
 
 header nav .nav-brand img {

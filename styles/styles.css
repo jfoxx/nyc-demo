@@ -19,6 +19,9 @@
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
 
+  --dark-blue: #2e4c7f;
+  --yellow: #f8c473;
+
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
   --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
@@ -142,6 +145,11 @@ pre {
   white-space: pre;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 main > div {
   margin: 40px 16px;
 }
@@ -220,12 +228,15 @@ main img {
   display: inline-block;
   height: 24px;
   width: 24px;
+  mask-size: contain;
+  mask-repeat: no-repeat;
 }
 
 .icon img {
   height: 100%;
   width: 100%;
 }
+
 
 /* sections */
 main > .section {
@@ -254,4 +265,14 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+.section[data-column="main"] {
+  width: calc(55% - (100% - 1600px) / 2 );
+  margin-left: calc((100% - 1600px) / 2 );
+}
+
+.section[data-column="aside"] {
+  width: calc(45% - (100% - 1600px) / 2 );
+  margin-right: calc((100% - 1600px) / 2 );
 }

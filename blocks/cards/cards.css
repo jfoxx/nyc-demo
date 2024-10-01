@@ -1,6 +1,6 @@
 .cards > ul {
   list-style: none;
-  margin: 0;
+  margin: 40px 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
@@ -9,7 +9,27 @@
 
 .cards > ul > li {
   border: 1px solid #dadada;
-  background-color: var(--background-color);
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  text-align: center;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-l);
+
+  .icon {
+    background-color: var(--yellow);
+    width: 50px;
+    height: 50px;
+  }
+
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    cursor: pointer;
+
+    .icon {
+      background-color: var(--dark-blue);
+    }
+  }
 }
 
 .cards .cards-card-body {
