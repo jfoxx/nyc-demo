@@ -6,7 +6,7 @@ const AEM_HOST = checkDomain()
 const cacheBuster = Math.random() * (5000 - 1) + 5000;
 
 function checkDomain(){
-  if (window.location.hostname.includes("hlx.page") || window.location.hostname.includes("hlx.live") || window.location.hostname.includes("localhost")){
+  if (window.location.hostname.includes("aem.page") || window.location.hostname.includes("aem.live") || window.location.hostname.includes("localhost")){
     return aem_publish    
   }else{
     return window.location.origin 
